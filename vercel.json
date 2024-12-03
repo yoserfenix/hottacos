@@ -1,17 +1,25 @@
 {
     "version": 2,
-    "functions": {
-      "api/db.js": {
-        "runtime": "nodejs16.x"
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      },
+      {
+        "src": "api/db.js",
+        "use": "@vercel/node"
       }
-    },
+    ],
     "rewrites": [
       {
         "source": "/api/(.*)",
         "destination": "/api/db.js"
       },
       {
-        "source": "/:path*",
+        "source": "/(.*)",
         "destination": "/index.html"
       }
     ]
