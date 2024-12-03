@@ -1,0 +1,77 @@
+/* General About Us Styles */
+.about-us {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin-top: 118px;
+}
+
+.about-us .hero {
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.about-us .hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-us .hero p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Sección de Historia */
+.about-us .section.history {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideUp 1s ease-out;
+}
+
+.about-us .section.history .text-content {
+  flex: 1;
+}
+
+.about-us .section.history img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .about-us .section {
+    flex-direction: column;
+  }
+
+  .about-us .section.history img {
+    width: 100%;
+  }
+}

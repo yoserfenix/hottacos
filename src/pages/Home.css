@@ -1,0 +1,89 @@
+/* Home Container */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  margin-top: 118px;
+}
+
+
+
+/* Menú destacado */
+.menu-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+}
+
+/* Promociones */
+.promotions {
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.promotion-card {
+  display: inline-block;
+  margin: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-card img {
+  width: 100%;
+  height: auto;
+}
+
+.promotion-info {
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+}
+
+.promotion-info h3 {
+  font-size: 1.5rem;
+}
+
+.promotion-info p {
+  font-size: 1rem;
+}
+
+/* Mapa de Sucursales */
+.branches-map {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.branches-map h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}

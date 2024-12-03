@@ -1,0 +1,54 @@
+/* src/components/Values.css */
+.section.values {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section.values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+}
+
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.value-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-item .icon {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.value-item:hover .icon {
+  color: #d35400;
+}
+
+.value-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #6c757d;
+}

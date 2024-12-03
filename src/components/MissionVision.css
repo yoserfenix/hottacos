@@ -1,0 +1,46 @@
+.mission-vision {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mission-vision .card {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .mission-vision .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .mission-vision .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .mission-vision .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mission-vision .card {
+      width: 100%;
+    }
+  }
+  

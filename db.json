@@ -1,0 +1,110 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Antojitos",
+        "sucursal": 1,
+        "products": [
+          {
+            "id": 1,
+            "name": "Guacamole",
+            "price": 499,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Guacamole_350x350.webp?alt=media&token=0b457545-e864-4d0f-b418-78ee7a451567"
+          },
+          {
+            "id": 2,
+            "name": "Nachos Supreme",
+            "price": 899,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nachos%20Calientes_350x350.webp?alt=media&token=63a398d6-3709-495c-a640-95f043686015"
+          },
+          {
+            "id": 3,
+            "name": "Burrito",
+            "price": 299,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Burrito_350x350.webp?alt=media&token=52550f3a-2852-4685-a376-88821e5366df"
+          },
+          {
+            "id": 4,
+            "name": "Papas Supreme Medianas",
+            "price": 199,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/SupremeFries_350x350.webp?alt=media&token=50d185c9-9dc4-49a5-ba82-b0d08dbd222c"
+          },
+          {
+            "id": 5,
+            "name": "Papas a la Hot Tacos",
+            "price": 79.99,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/PapasHotTacos_350x350.webp?alt=media&token=0d90f04d-cb6f-4f2f-aa76-6445d7d0c463"
+          },
+          {
+            "id": 6,
+            "name": "Gringa",
+            "price": 549,
+            "image": "https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Gringa_350x350.webp?alt=media&token=bb2d8afe-e425-4743-b5cb-4b8a52157758"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Ropa",
+        "sucursal": 2,
+        "products": [
+          {
+            "id": 8,
+            "name": "Camiseta",
+            "price": 19.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 9,
+            "name": "Jeans",
+            "price": 39.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 10,
+            "name": "Chaqueta",
+            "price": 59.99,
+            "image": "https://via.placeholder.com/150"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hogar",
+        "sucursal": 1,
+        "products": [
+          {
+            "id": 11,
+            "name": "Sofa",
+            "price": 499.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 12,
+            "name": "Lámpara de pie",
+            "price": 129.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 13,
+            "name": "Mesa de comedor",
+            "price": 299.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 14,
+            "name": "Silla de oficina",
+            "price": 89.99,
+            "image": "https://via.placeholder.com/150"
+          },
+          {
+            "id": 15,
+            "name": "Estantería",
+            "price": 149.99,
+            "image": "https://via.placeholder.com/150"
+          }
+        ]
+      }
+    ]
+  }
+  

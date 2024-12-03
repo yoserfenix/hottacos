@@ -1,0 +1,43 @@
+/* src/components/Special.css */
+.section.special {
+  padding: 4rem 2rem;
+  background-color: #ecf0f1;
+  text-align: left;
+}
+
+.section.special h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.section.special ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.section.special ul li {
+  margin-bottom: 1.5rem;
+}
+
+.section.special .icon {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.section.special ul li:hover .icon {
+  color: #d35400;
+}
+
+.section.special p {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: #333;
+}

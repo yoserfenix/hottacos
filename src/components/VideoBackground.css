@@ -1,0 +1,111 @@
+/* src/components/VideoBackground.css */
+
+/* Video Background */
+.video-background {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Hero Text (Parallax Effect) */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.6s;
+}
+
+/* Botón de Menú */
+.btn-menu {
+  position: relative;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-menu:hover {
+  transform: scale(1.1);
+}
+
+/* Efecto de pulso */
+.btn-menu::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 156, 18, 0.6); /* Color de la onda */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: pulse-animation 1.5s infinite;
+  z-index: -1;
+}
+
+/* Animación de pulso */
+@keyframes pulse-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Animación de entrada para el texto */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
