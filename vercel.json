@@ -1,5 +1,15 @@
 {
+    "version": 2,
+    "functions": {
+      "api/db.js": {
+        "runtime": "nodejs16.x"
+      }
+    },
     "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/api/db.js"
+      },
       {
         "source": "/:path*",
         "destination": "/index.html"
