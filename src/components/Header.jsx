@@ -1,28 +1,26 @@
 import React, { useEffect, useState, useRef } from 'react';
-import TopBar from '../components/TopBar'; // Importa el componente TopBar
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importa FontAwesomeIcon
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Iconos hamburguesa y cerrar
+import { Link } from 'react-router-dom';  // Cambia a Link de react-router-dom
+import TopBar from '../components/TopBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
 const Header = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [isMenuActive, setIsMenuActive] = useState(false); // Estado para el menú hamburguesa
-    const menuRef = useRef(null); // Referencia al contenedor del menú
-    const hamburgerRef = useRef(null); // Referencia al icono de hamburguesa
+    const menuRef = useRef(null);
+    const hamburgerRef = useRef(null);
 
-    // Simula la carga del contenido
     useEffect(() => {
         setTimeout(() => {
             setIsLoaded(true);
         }, 100);
     }, []);
 
-    // Función para abrir/cerrar el menú
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
     };
 
-    // Detecta clics fuera del menú y cierra el menú
     const handleClickOutside = (event) => {
         if (
             menuRef.current && !menuRef.current.contains(event.target) && 
@@ -32,7 +30,6 @@ const Header = () => {
         }
     };
 
-    // Se agrega el listener para detectar clics fuera del menú
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -40,7 +37,6 @@ const Header = () => {
         };
     }, []);
 
-    // Cerrar el menú al seleccionar un ítem
     const handleItemClick = () => {
         setIsMenuActive(false);
     };
@@ -50,18 +46,18 @@ const Header = () => {
             <TopBar />
             <div className="main-header">
                 <div className="logo">
-                    <a href="/">
+                    <Link to="/"> {/* Usamos Link en lugar de <a> */}
                         <img src="/images/Logo.png" alt="Logo" />
-                    </a>
+                    </Link>
                 </div>
                 <nav ref={menuRef} className={`nav-links ${isMenuActive ? 'active' : ''}`}>
-                    <a href="/" onClick={handleItemClick}>Inicio</a>
-                    <a href="/pedido" onClick={handleItemClick}>Pedido</a>
-                    <a href="/about" onClick={handleItemClick}>Nosotros</a>
-                    <a href="/menu" onClick={handleItemClick}>Menu</a>
-                    <a href="/services" onClick={handleItemClick}>Servicios</a>
-                    <a href="/contact" onClick={handleItemClick}>Contacto</a>
-                    <a href="/opiniones" onClick={handleItemClick}>Opiniones</a>
+                    <Link to="/" onClick={handleItemClick}>Inicio</Link> {/* Cambia <a> por <Link> */}
+                    <Link to="/pedido" onClick={handleItemClick}>Pedido</Link>
+                    <Link to="/about" onClick={handleItemClick}>Nosotros</Link>
+                    <Link to="/menu" onClick={handleItemClick}>Menu</Link>
+                    <Link to="/services" onClick={handleItemClick}>Servicios</Link>
+                    <Link to="/contact" onClick={handleItemClick}>Contacto</Link>
+                    <Link to="/opiniones" onClick={handleItemClick}>Opiniones</Link>
                 </nav>
                 <div 
                     ref={hamburgerRef} 
